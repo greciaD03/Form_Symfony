@@ -12,7 +12,7 @@ class FormController extends AbstractController
     public function index(): Response
     {
         return $this->render('form/index.html.twig', [
-            'controller_name' => 'FormController',
+            'controller_name' => 'Hello Word!',
         ]);
     }
 }

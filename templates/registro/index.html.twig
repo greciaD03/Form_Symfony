@@ -1,9 +1,21 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello RegistroController!{% endblock %}
+{% block title %}✒️ Formulario!{% endblock %}
 
 {% block body %}
 <div>
+    <form>
+        <p>Correo:<input type="text" name="email" placeholder="📧"></p>
+        <p>Contraseña:<input type="password" name="contraseña" placeholder="🔐"></p>
+        <button type="submit" name="boton" value="enviado">Aceptar</button>
+    
+        <p><input name="boton1" type="image" src="https://i.pinimg.com/564x/de/6a/e5/de6ae596644bde56faa61fbc3aa1689e.jpg" width="100" height="100"></p>
+        
+        <p><input type="text" name="texto1" value="Valor por defecto"></p>
+        <br><input type="checkbox" name="condiciones" checked="checked">Acepto las condiciones</br>
+        <input type="reset" value="Restablecer todos los campos a su valor predeterminado">
+    </form> 
+
 {{dump(controller_name)}}
 </div>
 {% endblock %}

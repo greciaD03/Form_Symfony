@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class RegistroController extends AbstractController
 {
     #[Route('/registro', name: 'app_registro')]
-    public function index(): Response
+    public function index(int $id, $Correo, $Contraseña, $Descripcion): Response
     {
         return $this->render('registro/index.html.twig', [
             'controller_name' => 'RegistroController',

@@ -20,10 +20,12 @@ class TaskController extends AbstractController
         $task = new Task();
         $task->setTask('Write a blog post');
         $task->setDueDate(new \DateTimeImmutable('tomorrow'));
+        $dueDateIsRequired = '...';
 
-        $form = $this->createForm(TaskType::class, $task);
-        return $this->render('task/index.html.twig', [
-            'form' => $form,
+        $form = $this->createForm(TaskType::class, $task, [
+        'require_due_date' => $dueDateIsRequired,
         ]);
+        return $this->render('task/index.html.twig', [
+            'form' => $form,]);
     }
 }

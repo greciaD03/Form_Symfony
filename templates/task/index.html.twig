@@ -3,7 +3,11 @@
 {% block title %}🎮 TaskController!{% endblock %}
 
 {% block body %}
+
 <div>
-{{form(form)}}
+{{form_start(form, {'attr': {'novalidate': 'novalidate'}})}}
+{{ form_widget(form) }}
+{{ form_end(form) }}
 </div>
+
 {% endblock %}

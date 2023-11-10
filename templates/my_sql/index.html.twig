@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MySqlController!{% endblock %}
+
+{% block body %}
+<form method=""post">
+<h1>¡FORMULARIO!</h1>
+<p><input type= "text" name="name" placeholder="Nombre completo"></p>
+<p><input type= "email" name="email" placeholder="Email"></p>
+<p><input type= "submit"</p>
+
+if ($resultado) {
+    <h3 class="ok">¡Te has inscripto correctamente!</h3>
+} else {
+    <h3 class="bad">¡Ups ha ocurrido un error!</h3>
+}   else {
+    <h3 class="bad">¡Por favor complete los campos!</h3>
+}
+
+</form>
+{% endblock %}
